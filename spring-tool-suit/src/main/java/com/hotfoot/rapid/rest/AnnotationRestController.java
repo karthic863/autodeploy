@@ -18,6 +18,7 @@ import com.hotfoot.rapid.pojo.EmployeeMap;
 @RestController
 public class AnnotationRestController {
 
+	
 	@RequestMapping(value="/rest/read/jsonignore",method = RequestMethod.GET)
 	public ResponseEntity<?> getResponse(){
 		Employee e = new Employee();
