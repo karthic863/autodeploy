@@ -33,10 +33,11 @@ spec:
       nodePort: 30008
   type: LoadBalancer
 ---
-apiVersion: policy/v1beta1
+apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: demo-pdb
+  name: jenkins-admin
+  nameSpace: devops-toold
 spec:
   minAvailable: 2
   selector:
