@@ -41,7 +41,7 @@ pipeline {
     }
     stage('Deploy to Kubernetes'){
         steps{
-           withKubeConfig([credentialsId: 'KubeAdminConfig', serverUrl: 'http://127.0.0.1:45069']) {
+           withKubeConfig([credentialsId: 'KubeAdminConfig', serverUrl: 'http://127.0.0.1:37965']) {
                sh 'kubectl apply -f spring-tool-suit/deployment.yml'
          }
        }
