@@ -36,7 +36,7 @@ pipeline {
         }
       }
     }
-    stage('Deploy To Kubernetes'){
+    stage('Deploy to Kubernetes'){
         steps{
             sh 'kubectl apply -f deployment.yml --context kube-system' 
        }
