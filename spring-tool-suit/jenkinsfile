@@ -38,7 +38,9 @@ pipeline {
     }
     stage('Deploy to Kubernetes'){
         steps{
-             sh 'kubectl apply -f deployment_script.yml'
+           withKubeConfig([credentialsId: 'jenkins-admin', serverUrl: 'http://127.0.0.1:38445']) {
+               sh 'kubectl apply -f deployment_script.yml'
+         }
        }
     }
   }
