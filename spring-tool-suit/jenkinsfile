@@ -9,8 +9,9 @@ pipeline {
     stage('Compile') {
       steps {
         /* git 'https://github.com/karthic863/autodeploy.git'*/
-         mvn -f autodeploy/spring-tool-suit/pom.xml
+       
         script{
+                mvn -f autodeploy/spring-tool-suit/pom.xml
                 def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
                 sh "${mvnHome}/bin/mvn package"
         }
