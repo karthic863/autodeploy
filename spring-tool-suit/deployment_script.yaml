@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deployment
+  labels:
+    app: demo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+      - name: demo-app
+        image: karthickkb0025/sts-test:latest
+        ports:
+        - containerPort: 8081
