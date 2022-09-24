@@ -7,5 +7,8 @@ WORKDIR /opt/app
 # cp target/spring-boot-web.jar /opt/app/app.jar
 COPY ${JAR_FILE} app.jar
 
+# define port
+EXPOSE 8081 5005
+
 # java -jar /opt/app/app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
