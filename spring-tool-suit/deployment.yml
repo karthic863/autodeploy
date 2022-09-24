@@ -32,14 +32,3 @@ spec:
       targetPort: 8081
       nodePort: 30008
   type: LoadBalancer
----
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: jenkins-admin
-  nameSpace: devops-toold
-spec:
-  minAvailable: 2
-  selector:
-    matchLabels:
-      app: demo-app
