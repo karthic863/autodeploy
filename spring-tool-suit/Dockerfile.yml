@@ -1,14 +1,14 @@
 FROM openjdk:11.0-jre-stretch
+ARG JAR_FILE=target/spring-tool-suit-0.0.1-SNAPSHOT.jar
 
-WORKDIR /usr/share/demo-k8s
+# cd /opt/app
+WORKDIR /opt/app
 
-ARG appDir=/usr/share/demo-k8s
-ARG DEPENDENCY=target/dependency
+# cp target/spring-boot-web.jar /opt/app/app.jar
+COPY ${JAR_FILE} app.jar
 
-COPY ${DEPENDENCY}/BOOT-INF/lib ${appDir}/lib
-COPY ${DEPENDENCY}/META-INF ${appDir}/META-INF
-COPY ${DEPENDENCY}/BOOT-INF/classes ${appDir}
-
+# define port
 EXPOSE 8081 5005
 
-ENTRYPOINT ["java","-cp","com/hotfoot/rapid/*:lib/*:.","com.hotfoot.rapid.StsMain"]
+# java -jar /opt/app/app.jar
+ENTRYPOINT ["java","-jar","app.jar"]
