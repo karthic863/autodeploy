@@ -1,0 +1,99 @@
+2022-10-01 19:36:37,591 INFO  [main] com.hotfoot.rapid.main.StsMain : Starting StsMain on ubuntu-vb with PID 57427 (/media/sf_HTS/git/autodeploy/target/classes started by vagrant in /media/sf_HTS/git/autodeploy)
+2022-10-01 19:36:37,597 INFO  [main] com.hotfoot.rapid.main.StsMain : No active profile set, falling back to default profiles: default
+2022-10-01 19:36:39,313 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 19:36:39,365 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34ms. Found 0 JPA repository interfaces.
+2022-10-01 19:36:41,069 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9039 (http)
+2022-10-01 19:36:41,086 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-10-01 19:36:41,087 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-01 19:36:41,211 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/sts] : Initializing Spring embedded WebApplicationContext
+2022-10-01 19:36:41,211 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3452 ms
+2022-10-01 19:36:41,439 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-10-01 19:36:41,461 INFO  [main] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-10-01 19:36:41,503 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-01 19:36:41,511 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-10-01 19:37:31,747 INFO  [main] com.hotfoot.rapid.main.StsMain : Starting StsMain on ubuntu-vb with PID 57626 (/media/sf_HTS/git/autodeploy/target/classes started by vagrant in /media/sf_HTS/git/autodeploy)
+2022-10-01 19:37:31,758 INFO  [main] com.hotfoot.rapid.main.StsMain : No active profile set, falling back to default profiles: default
+2022-10-01 19:37:33,498 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 19:37:33,534 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
+2022-10-01 19:37:35,339 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9039 (http)
+2022-10-01 19:37:35,357 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-10-01 19:37:35,358 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-01 19:37:35,533 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/sts] : Initializing Spring embedded WebApplicationContext
+2022-10-01 19:37:35,534 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3533 ms
+2022-10-01 19:37:35,767 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-10-01 19:37:35,776 INFO  [main] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-10-01 19:37:35,800 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-01 19:37:35,804 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2022-10-01 19:38:19,547 INFO  [main] com.hotfoot.rapid.main.StsMain : Starting StsMain on ubuntu-vb with PID 57751 (/media/sf_HTS/git/autodeploy/target/classes started by vagrant in /media/sf_HTS/git/autodeploy)
+2022-10-01 19:38:19,560 INFO  [main] com.hotfoot.rapid.main.StsMain : No active profile set, falling back to default profiles: default
+2022-10-01 19:38:21,361 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-01 19:38:21,411 INFO  [main] org.springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 0 JPA repository interfaces.
+2022-10-01 19:38:23,169 INFO  [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 9039 (http)
+2022-10-01 19:38:23,187 INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2022-10-01 19:38:23,187 INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-10-01 19:38:23,376 INFO  [main] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/sts] : Initializing Spring embedded WebApplicationContext
+2022-10-01 19:38:23,377 INFO  [main] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3569 ms
+2022-10-01 19:38:23,623 WARN  [main] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2022-10-01 19:38:23,637 INFO  [main] org.apache.catalina.core.StandardService : Stopping service [Tomcat]
+2022-10-01 19:38:23,658 INFO  [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-10-01 19:38:23,663 ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+

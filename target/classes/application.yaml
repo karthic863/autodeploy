@@ -1,0 +1,6 @@
+server:
+  port: 9039
+  session-timeout: 6000
+  connection-timeout: 120000
+  servlet:
+    context-path: /sts
