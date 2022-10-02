@@ -19,6 +19,8 @@ spec:
         image: karthickkb0025/sts-test:latest
         ports:
         - containerPort: 8081
+        imagePullSecrets:
+        - name: dockersecret
 ---
 apiVersion: v1
 kind: Service
