@@ -4,7 +4,7 @@ metadata:
     name: sts-pods
 spec:
     containers:
-        - name: sts-pods
+        - name: sts-pods-kb
           image: karthickkb0025/sts-test:latest
           imagePullPolicy: Always
     imagePullSecrets:
