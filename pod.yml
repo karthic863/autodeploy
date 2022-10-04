@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: sts-pods
+    name: sts-pods-k
 spec:
     containers:
         - name: sts-pods-kb
