@@ -7,3 +7,5 @@ spec:
         - name: sts-pods
           image: karthickkb0025/sts-test:latest
           imagePullPolicy: Always
+    imagePullSecrets:
+    - name: localdockersecret9
