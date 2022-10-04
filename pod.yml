@@ -5,5 +5,5 @@ metadata:
 spec:
     containers:
         - name: sts-pods
-          image: karthickkb0025/sts-test
+          image: karthickkb0025/sts-test:latest
           imagePullPolicy: Always
