@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: sts-pods
+spec:
+    containers:
+        - name: sts-pods
+          image: karthickkb0025/sts-test
