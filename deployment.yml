@@ -20,7 +20,7 @@ spec:
         ports:
         - containerPort: 8081
       imagePullSecrets:
-      - name: localdockersecretss
+      - name: localdockersecret1
 ---
 apiVersion: v1
 kind: Service
