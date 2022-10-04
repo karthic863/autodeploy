@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-    name: sts-pods-kb
+    name: sts-pods-kkb
 spec:
     containers:
         - name: sts-pods
           image: karthickkb0025/sts-test:latest
           imagePullPolicy: Always
     imagePullSecrets:
-    - name: localdockersecret11
+    - name: localdockersecret12
