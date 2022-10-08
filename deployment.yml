@@ -17,6 +17,9 @@ spec:
         image: karthickkb0025/sts-test:latest
         ports:
         - containerPort: 9039
+        envFrom:
+          - configMapRef:
+              name: yaml-overriding
       imagePullSecrets:
       - name: registrypullsecret
 ---
