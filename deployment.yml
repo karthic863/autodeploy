@@ -16,7 +16,7 @@ spec:
       - name: demo-app
         image: karthickkb0025/sts-test:latest
         ports:
-        - containerPort: 8081
+        - containerPort: 9039
       imagePullSecrets:
       - name: registrypullsecret
 ---
@@ -29,6 +29,6 @@ spec:
     app: demo-app
   ports:
     - protocol: "TCP"
-      port: 8081
-      targetPort: 8081
+      port: 9039
+      targetPort: 9039
   type: NodePort
