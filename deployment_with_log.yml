@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+      - name: demo-app
+        image: karthickkb0025/sts-test:latest
+        args: [/bin/sh, -c, 'tail -n+1 -f /var/log/portal.log']
+        volumeMounts:
+        - name: varlog
+          mountPath: /var/log
+        ports:
+        - containerPort: 9039
+      imagePullSecrets:
+      - name: registrypullsecret
+      volumes:
+      - name: varlog
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-service
+spec:
+  selector:
+    app: demo-app
+  ports:
+    - protocol: "TCP"
+      port: 9039
+      targetPort: 9039
+  type: NodePort
