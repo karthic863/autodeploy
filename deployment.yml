@@ -15,11 +15,11 @@ spec:
       containers:
       - name: demo-app
         image: karthickkb0025/sts-test:latest
+        envFrom:
+         - configMapRef:
+             name: yaml-overriding-01
         ports:
         - containerPort: 9039
-        envFrom:
-          - configMapRef:
-              name: yaml-overriding-01
       imagePullSecrets:
       - name: registrypullsecret
 ---
