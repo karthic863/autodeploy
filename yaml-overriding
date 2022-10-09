@@ -1,8 +1,0 @@
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: yaml-overriding-01
-data:
-  application.properties: |-
-    server.port=9040
-    server.servlet.context-path= /sts-test
