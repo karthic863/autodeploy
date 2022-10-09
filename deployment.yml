@@ -19,7 +19,7 @@ spec:
         - containerPort: 9039
         envFrom:
           - configMapRef:
-              name: yaml-overriding
+              name: yaml-overriding-01
       imagePullSecrets:
       - name: registrypullsecret
 ---
